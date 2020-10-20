@@ -1,0 +1,27 @@
+{
+  "name": "tictactoe",
+  "version": "0.0.1",
+  "description": "An online multiplayer tictactoe game with websockets",
+  "main": "app.js",
+  "scripts": {
+    "selfsign": "openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout certs/key.pem -out certs/cert.pem -config certs/selfsign.cnf",
+    "dev": "nodemon --inspect",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jermerf/gameappheroku.git"
+  },
+  "author": "Jermaine Francoeur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jermerf/gameappheroku/issues"
+  },
+  "homepage": "https://github.com/jermerf/gameappheroku#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ws": "^7.3.1"
+  }
+}
